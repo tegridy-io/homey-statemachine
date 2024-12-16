@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
+</head>
+
+<body>
+
+    <header class="homey-header">
+        <p class="homey-subtitle" data-i18n="settings.title">
+          <!-- This field will also be translated -->
+        </p>
+    </header>
+    <ul id="myList"></ul>
+
+    <script type="text/javascript">
+        function onHomeyReady(Homey) {
+            let fsms = ['alice', 'bob', 'carl'];
+            let list = document.getElementById("myList");
+
+            for (i = 0; i < fsms.length; ++i) {
+                (async () => {
+                    let data = await Homey.get(fsms[i])
+                    let div = `
+                        <fieldset class="homey-form-fieldset">
+                          <legend class="homey-form-legend">${data.name}</legend>
+
+                          <div class="homey-form-group">
+                            <label class="homey-form-label" for="stae">State</label>
+                            <input class="homey-form-input" id="state" type="text" value="${data.state}" />
+                            </div>
+                            <div class="homey-form-group">
+                              <label class="homey-form-label" for="mode">Mode</label>
+                              <input class="homey-form-input" id="state" type="text" value="${data.mode}" />
+                          </div>
+                        </fieldset>
+                    `;
+                    list.innerHTML += div;
+                })();
+            }
+
+            Homey.ready();
+        }
+    </script>
+
+</body>
+
+</html>

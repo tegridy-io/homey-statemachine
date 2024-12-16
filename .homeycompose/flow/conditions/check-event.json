@@ -1,0 +1,27 @@
+{
+  "title": {
+    "en": "Check an event",
+    "de": "Vergleiche Ereignis"
+  },
+  "titleFormatted": {
+    "en": "[[droptoken]] !{{is|is not}} [[event]]",
+    "de": "[[droptoken]] !{{ist|ist nicht}} [[event]]"
+  },
+  "droptoken": [
+    "string"
+  ],
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "event",
+      "title": {
+        "en": "Event",
+        "de": "Ereignis"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": {
+    "en": "State has changed",
+    "de": "Zustand hat sich geändert"
+  },
+  "titleFormatted": {
+    "en": "State of [[statemachine]] has changed",
+    "de": "Zustand von [[statemachine]] hat sich geändert"
+  },
+  "hint": {
+    "en": "Hint?"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "statemachine",
+      "required": true,
+      "title": {
+        "en": "State",
+        "de": "Zustand"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "string",
+      "name": "state",
+      "title": {
+        "en": "New State",
+        "de": "Neuer Zustand"
+      },
+      "example": {
+        "en": "couch active",
+        "de": "Sofa besetzt"
+      }
+    }
+  ]
+}
