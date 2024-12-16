@@ -1,0 +1,68 @@
+{
+  "title": {
+    "en": "Event was received",
+    "de": "Ereignis wurde empfangen"
+  },
+  "titleFormatted": {
+    "en": "Event for [[statemachine]] in state [[state]] and mode [[mode]] was received",
+    "de": "Ereignis für [[statemachine]] in Zustand [[state]] und Modus [[mode]] wurde empfangen"
+  },
+  "hint": {
+    "en": "Hint?"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "statemachine",
+      "required": true,
+      "title": {
+        "en": "Statemachine",
+        "de": "Zustandsautomat"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    },
+    {
+      "type": "autocomplete",
+      "name": "state",
+      "required": false,
+      "title": {
+        "en": "State",
+        "de": "Zustand"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    },
+    {
+      "type": "autocomplete",
+      "name": "mode",
+      "required": false,
+      "title": {
+        "en": "Mode",
+        "de": "Modus"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "string",
+      "name": "event",
+      "title": {
+        "en": "Event",
+        "de": "Ereignis"
+      },
+      "example": {
+        "en": "motion detected",
+        "de": "Bewegung erkannt"
+      }
+    }
+  ]
+}

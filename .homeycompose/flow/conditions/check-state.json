@@ -1,0 +1,27 @@
+{
+  "title": {
+    "en": "Check new state",
+    "de": "Vergleiche neuen Zustand"
+  },
+  "titleFormatted": {
+    "en": "[[droptoken]] !{{is now|is now not}} [[state]]",
+    "de": "[[droptoken]] !{{ist neu|ist neu nicht}} [[state]]"
+  },
+  "droptoken": [
+    "string"
+  ],
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "state",
+      "title": {
+        "en": "State",
+        "de": "Zustand"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    }
+  ]
+}

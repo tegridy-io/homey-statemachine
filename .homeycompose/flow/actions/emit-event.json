@@ -1,0 +1,38 @@
+{
+  "title": {
+    "en": "Emit an event",
+    "de": "Ein Ereignis auslösen"
+  },
+  "titleFormatted": {
+    "en": "Send event [[event]] to [[statemachine]]",
+    "de": "Ereignis [[event]] an [[statemachine]] senden"
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "statemachine",
+      "required": true,
+      "title": {
+        "en": "Statemachine",
+        "de": "Zustandsautomat"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    },
+    {
+      "type": "autocomplete",
+      "name": "event",
+      "required": false,
+      "title": {
+        "en": "Event",
+        "de": "Ereignis"
+      },
+      "placeholder": {
+        "en": "choose",
+        "de": "auswählen"
+      }
+    }
+  ]
+}
