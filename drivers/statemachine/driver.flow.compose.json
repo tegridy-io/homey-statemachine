@@ -1,0 +1,34 @@
+{
+  "actions": [
+    {
+      "id": "state-change",
+      "title": {
+        "de": "Zustand ändern",
+        "en": "Change state",
+        "nl": "Toestand wijzigen"
+      },
+      "titleFormatted": {
+        "de": "Zustand ändern nach [[state]]",
+        "en": "Change state to [[state]]",
+        "nl": "Toestand wijzigen naar [[state]]"
+      },
+      "args": [
+        {
+          "type": "autocomplete",
+          "name": "state",
+          "required": false,
+          "title": {
+            "de": "Neuer Zustand",
+            "en": "New State",
+            "nl": "Nieuwe toestand"
+          },
+          "placeholder": {
+            "de": "auswählen",
+            "en": "choose",
+            "nl": "kies"
+          }
+        }
+      ]
+    }
+  ]
+}

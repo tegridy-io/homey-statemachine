@@ -1,0 +1,42 @@
+[
+  {
+    "type": "group",
+    "label": { 
+      "de": "Komma separierte Liste der verfügbaren Zustände",
+      "en": "Comma separated list of available states",
+      "nl": "Komma gescheiden lijst van beschikbare toestanden"
+    },
+    "children": [
+      {
+        "id": "states",
+        "type": "text",
+        "label": { 
+          "de": "Zustände",
+          "en": "States",
+          "nl": "Toestanden"
+        },
+        "value": ""
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": { 
+      "de": "Komma separierte Liste der verfügbaren Modi",
+      "en": "Comma separated list of available modes",
+      "nl": "Komma gescheiden lijst van beschikbare modi"
+    },
+    "children": [
+      {
+        "id": "modes",
+        "type": "text",
+        "label": { 
+          "de": "Modi",
+          "en": "Modes",
+          "nl": "Modi"
+        },
+        "value": ""
+      }
+    ]
+  }
+]
