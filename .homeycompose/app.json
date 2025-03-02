@@ -1,0 +1,33 @@
+{
+  "id": "io.tegridy.homey-statemachine",
+  "version": "0.1.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#800fdb",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Statemachine"
+  },
+  "description": {
+    "de": "Erstelle Zustandsmaschinen für deine Flows.",
+    "en": "Create statemachines for your flows.",
+    "nl": "Maak toestandsmachines voor je stromen."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Debakel Orakel",
+    "email": "do@tegridy.io"
+  },
+  "source": "https://github.com/tegridy-io/homey-statemachine",
+  "support": "https://github.com/tegridy-io/homey-statemachine/issues"
+}
