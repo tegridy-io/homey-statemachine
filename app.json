@@ -30,5 +30,145 @@
     "email": "do@tegridy.io"
   },
   "source": "https://github.com/tegridy-io/homey-statemachine",
-  "support": "https://github.com/tegridy-io/homey-statemachine/issues"
+  "support": "https://github.com/tegridy-io/homey-statemachine/issues",
+  "flow": {
+    "actions": [
+      {
+        "id": "state-change",
+        "title": {
+          "de": "Zustand ändern",
+          "en": "Change state",
+          "nl": "Toestand wijzigen"
+        },
+        "titleFormatted": {
+          "de": "Zustand ändern nach [[state]]",
+          "en": "Change state to [[state]]",
+          "nl": "Toestand wijzigen naar [[state]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=statemachine"
+          },
+          {
+            "type": "autocomplete",
+            "name": "state",
+            "required": false,
+            "title": {
+              "de": "Neuer Zustand",
+              "en": "New State",
+              "nl": "Nieuwe toestand"
+            },
+            "placeholder": {
+              "de": "auswählen",
+              "en": "choose",
+              "nl": "kies"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Statemachine"
+      },
+      "class": "other",
+      "capabilities": [
+        "current_state",
+        "current_mode"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/statemachine/assets/images/small.png",
+        "large": "/drivers/statemachine/assets/images/large.png",
+        "xlarge": "/drivers/statemachine/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_my_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_my_devices"
+          }
+        },
+        {
+          "id": "add_my_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "statemachine",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "de": "Komma separierte Liste der verfügbaren Zustände",
+            "en": "Comma separated list of available states",
+            "nl": "Komma gescheiden lijst van beschikbare toestanden"
+          },
+          "children": [
+            {
+              "id": "states",
+              "type": "text",
+              "label": {
+                "de": "Zustände",
+                "en": "States",
+                "nl": "Toestanden"
+              },
+              "value": ""
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "de": "Komma separierte Liste der verfügbaren Modi",
+            "en": "Comma separated list of available modes",
+            "nl": "Komma gescheiden lijst van beschikbare modi"
+          },
+          "children": [
+            {
+              "id": "modes",
+              "type": "text",
+              "label": {
+                "de": "Modi",
+                "en": "Modes",
+                "nl": "Modi"
+              },
+              "value": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "current_mode": {
+      "type": "string",
+      "title": {
+        "de": "Aktueller Modus der Zustandsmaschine",
+        "en": "Current mode of the statemachine",
+        "nl": "Huidige modus van de toestandsmachine"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": false
+    },
+    "current_state": {
+      "type": "string",
+      "title": {
+        "de": "Aktueller Zustand der Zustandsmaschine",
+        "en": "Current state of the statemachine",
+        "nl": "Huidige toestand van de toestandsmachine"
+      },
+      "uiComponent": null,
+      "getable": true,
+      "setable": true
+    }
+  }
 }
